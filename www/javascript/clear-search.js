@@ -1,9 +1,9 @@
 var main = function(){
 	"use strict";
-	$(".search").on("click", function(event){
+	$(".search_box").on("click", function(event){
 		$(this).val("");
 	});
-	$(".search").focusout(function(){
+	$(".search_box").focusout(function(){
 		$(this).val("поиск...");
 	});
 };

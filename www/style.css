@@ -6,7 +6,8 @@ body
 	/*background-image: url(res/xbox-360-gamepad-background.jpeg);*/
 	margin-left: 20%;
 	margin-right: 20%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Helvetica", Helvetica, sans-serif;
+	/*font-family: Times, Georgia, serif;*/
 }
 .header{
 	text-align: left;
@@ -16,7 +17,7 @@ body
 .navigation{
 	background-color: white;
 }
-.search{
+.search_box{
 	padding: 8px;
 	background-color: lightgrey;
 	margin-top: 10px;
@@ -121,6 +122,10 @@ img.table_images{
 	max-width: 100%;
 	max-height: 100%;
 }
+input.table_images{
+	max-width: 100%;
+	max-height: 100%;
+}
 a.table_images:hover{
 	border-bottom: 10px solid orange;
 }
@@ -173,28 +178,29 @@ a.table_images:active{
 /******* *************** ********/
 /********               *********/
 /********************************/
-@media (max-width: 1366px){
+@media (max-width: 1400px){
 body
 {
 	background-color: rgb(0,80,120);
 	/*background-image: url(res/xbox-360-gamepad-background.jpeg);*/
 	margin-left: 20%;
 	margin-right: 20%;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Helvetica CY", "Tahoma", Verdana, sans-serif;
+	/*font-family: Times, Georgia, serif;*/
 }
 .header{
 	text-align: left;
-	/*background-color: white;*/
 	padding: 5px;
 }
 .navigation{
 	background-color: white;
 }
-.search{
+.search_box{
 	padding: 8px;
 	background-color: lightgrey;
-	margin-top: 10px;
+	margin-top: 8px;
 	margin-left: 8px;
+	border-radius: 5px;
 }
 /*Элементы меню:*/
 .spoiler_body {
@@ -224,13 +230,13 @@ body
     padding:5px;
 }
 /*списки:*/
-ul{
+ul.navigation{
     list-style-type: none;
     overflow: hidden;
     padding:0px;
     margin: 0px;
 }
-li{
+li.navigation{
     float: left;
     text-align: center;
     border-right: 1px solid black;
@@ -262,7 +268,7 @@ a.navigation:active{
 /*Таблица:*/
 table{
 	width: 100%;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 /*заглавия*/
 caption{
@@ -294,10 +300,10 @@ img.table_images{
 	max-height: 100%;
 }
 a.table_images:hover{
-	border-bottom: 10px solid orange;
+	border-bottom: 3px solid orange;
 }
 a.table_images:active{
-	border-bottom: 10px solid #66CCFF;
+	border-bottom: 3px solid #66CCFF;
 }
 /********************************/
 .dots{
